@@ -1,7 +1,9 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Header from "./Header.js";
 import Filter from "./Filter.js";
 import Listings from "./Listings.js";
+import AboutUs from "./AboutUs.js";
 import listingsData from "./data/listingsData.js";
 import "../sass/App.scss";
 
@@ -207,7 +209,7 @@ class RealEstate extends Component {
       },
       () => {
         this.filteredData();
-        console.log("this was clicked");
+        console.log("reset was clicked");
       }
     );
   };

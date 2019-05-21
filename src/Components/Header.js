@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import AboutUs from "./AboutUs";
+import Listings from "./Listings";
 
 export default class Header extends Component {
   constructor() {
@@ -8,22 +11,25 @@ export default class Header extends Component {
 
   render() {
     return (
-      <header>
-        <div className="logo">
-          <a href="#home">
-            <i className="fas fa-home" />
-          </a>
-        </div>
+      <Router>
+        <header>
+          <div className="logo">
+            <Link to="#home">
+              <i className="fas fa-home" />
+            </Link>
+          </div>
 
-        <nav>
-          <a href="#home">Post Ad</a>
-          <a href="#home">About Us</a>
-          <a href="#home">Login</a>
-          <a href="#home" className="register-btn">
-            Register
-          </a>
-        </nav>
-      </header>
+          <nav>
+            <Link to="#home">Post Ad</Link>
+            <Link to="/about/">About Us</Link>
+            <Link to="#home">Login</Link>
+            <Link to="#home" className="register-btn">
+              Register
+            </Link>
+          </nav>
+        </header>
+        <Route path="/about" component={AboutUs} />
+      </Router>
     );
   }
 }

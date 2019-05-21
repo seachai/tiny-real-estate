@@ -29,7 +29,12 @@ export default class Listings extends Component {
                 <div className="details">
                   <div className="col-md-9">
                     <div className="user-details">
-                      <span className="user-name">{listing.userName}</span>
+                      <span
+                        className="user-name"
+                        style={{ fontSize: "1.2rem" }}
+                      >
+                        {listing.userName}
+                      </span>
                       <span className="post-date">
                         Posted on {listing.postDate}
                       </span>
