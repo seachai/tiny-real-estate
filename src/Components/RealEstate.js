@@ -20,7 +20,6 @@ class RealEstate extends Component {
       loft: false,
       patio: false,
       bar: false,
-      gym: false,
       filteredData: listingsData,
       populateFormsData: "",
       sortBy: "price-descending",
@@ -82,14 +81,9 @@ class RealEstate extends Component {
     }
 
     if (this.state.city !== "all") {
-      newData = newData.filter(
-        listing => {
-          return listing.city === this.state.city;
-        },
-        () => {
-          console.log("Does this work");
-        }
-      );
+      newData = newData.filter(listing => {
+        return listing.city === this.state.city;
+      });
     }
 
     if (this.state.homeType !== "all") {
@@ -196,6 +190,27 @@ class RealEstate extends Component {
       }
     });
   }
+
+  resetFilters = () => {
+    this.setState(
+      {
+        city: "all",
+        homeType: "all",
+        rooms: "0",
+        min_price: "",
+        max_price: "",
+        min_floor_space: "",
+        max_floor_space: "",
+        loft: false,
+        patio: false,
+        bar: false
+      },
+      () => {
+        this.filteredData();
+        console.log("this was clicked");
+      }
+    );
+  };
 
   render() {
     return (
