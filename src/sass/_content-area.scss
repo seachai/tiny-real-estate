@@ -338,3 +338,43 @@
         }
     } 
 }
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+    #filter {
+        display: none;
+    }
+
+    #listings {
+        .search-area {
+            input[type] {
+                width: 100%;
+            }
+        }
+    }
+
+    .sortby-area {
+        .sort-options {
+            .view {
+                display: none!important;
+            }
+        }
+    }
+
+    #listings {
+        width: 100%;
+    }
+
+    #pagination {
+        .pages {
+            li {
+                padding: 10px 15px;
+            }
+        }
+    }
+  }
+  
+  /* Tablet Styles */
+  @media only screen and (min-width: 401px) and (max-width: 960px) {
+
+  }

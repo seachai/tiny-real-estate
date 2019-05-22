@@ -14,7 +14,7 @@ export default class App extends Component {
         <div>
           <Header />
           <section id="content-area">
-            <Route path="/" component={<RealEstate />} />
+            <Route path="/home" exact component={RealEstate} />
             <Route path="/about" component={AboutUs} />
           </section>
         </div>

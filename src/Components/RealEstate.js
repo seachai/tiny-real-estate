@@ -217,7 +217,6 @@ class RealEstate extends Component {
   render() {
     return (
       <div>
-        <Header />
         <section id="content-area">
           <Filter
             change={this.change}
