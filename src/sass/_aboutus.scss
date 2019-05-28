@@ -1,0 +1,35 @@
+#aboutUs {
+    height: 100vh;
+    padding: 50px;
+
+    .title {
+        font-size: 3.5rem;
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 5rem;
+        color: $darkGrey;
+    }
+
+    .container {
+        display: flex;
+        .info {
+            color: #333;
+            margin-bottom: 2rem;
+            line-height: 2.5rem;
+        }
+    
+        .aboutPhoto {
+            width: 500px;
+            height: 400px;
+            margin: 50px;
+        }
+    }
+
+    .footer-info {
+        margin-top: 5rem;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 500;
+        color: $darkGrey;
+    }
+}

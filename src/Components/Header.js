@@ -14,7 +14,7 @@ export default class Header extends Component {
       <Router>
         <header>
           <div className="logo">
-            <Link to="#home">
+            <Link exact to="/">
               <i className="fas fa-home" />
             </Link>
           </div>
@@ -28,7 +28,6 @@ export default class Header extends Component {
             </Link>
           </nav>
         </header>
-        <Route path="/about" component={AboutUs} />
       </Router>
     );
   }

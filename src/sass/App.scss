@@ -4,10 +4,13 @@
 @import "grid";
 @import "listings";
 @import "content-area";
+@import "aboutus";
 
 *, html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }

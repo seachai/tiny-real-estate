@@ -12,11 +12,19 @@ export default class App extends Component {
     return (
       <Router>
         <div>
+<<<<<<< HEAD
           {/* <Header /> */}
           {/* <section id="content-area"> */}
           <Route exact path="/" component={RealEstate} />
           <Route path="/about" component={AboutUs} />
           {/* </section> */}
+=======
+          <Header />
+          <section id="content-area">
+            <Route path="/home" exact component={RealEstate} />
+            <Route path="/about" component={AboutUs} />
+          </section>
+>>>>>>> 52de3f37d4fc66ece989d6e8781f17f835e4bf54
         </div>
       </Router>
     );
