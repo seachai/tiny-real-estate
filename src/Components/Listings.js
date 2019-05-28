@@ -50,7 +50,7 @@ export default class Listings extends Component {
                         <span>Bedrooms {listing.rooms}</span>
                       </div>
                       <div className="listing-btn">
-                        <a href="#">View More</a>
+                        <a href="#home">View More</a>
                       </div>
                     </div>
                   </div>
@@ -98,7 +98,7 @@ export default class Listings extends Component {
                         <span>Bedrooms {listing.rooms}</span>
                       </div>
                       <div className="listing-btn">
-                        <a href="#">View More</a>
+                        <a href="#home">View More</a>
                       </div>
                     </div>
                   </div>
