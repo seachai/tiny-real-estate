@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import RealEstate from './Components/RealEstate';
+import App from './Components/App';
 
-ReactDOM.render(<RealEstate />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
