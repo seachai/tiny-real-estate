@@ -238,6 +238,10 @@
               margin-bottom: 15px;
             }
 
+            .post-date-box {
+              font-size: 1rem;
+            }
+
             .post-date {
               font-size: 1rem;
             }
@@ -258,6 +262,27 @@
             .bedrooms {
               display: inline-block;
             }
+
+            .listing-btn-box {
+              margin-top: 35px;
+              a {
+                padding: 10px 55px;
+                border-radius: 7px;
+                background: #333;
+                width: 50%;
+                margin: 0 auto;
+                color: $white;
+                text-decoration: none;
+                font-weight: 500;
+                cursor: pointer;
+                transition: background 0.3s ease-in-out;
+
+                &:hover {
+                  background: $pink;
+                }
+              }
+            }
+
             .listing-btn {
               margin-top: 35px;
 
@@ -339,6 +364,37 @@
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
+  #filter {
+    display: none;
+  }
+
+  #listings {
+    .search-area {
+      input[type] {
+        width: 100%;
+      }
+    }
+  }
+
+  .sortby-area {
+    .sort-options {
+      .view {
+        display: none !important;
+      }
+    }
+  }
+
+  #listings {
+    width: 100%;
+  }
+
+  #pagination {
+    .pages {
+      li {
+        padding: 10px 15px;
+      }
+    }
+  }
 }
 
 /* Tablet Styles */
@@ -357,51 +413,38 @@
         }
       }
 
-      .list-results {
+      .listing-img {
         .details {
-          
+          .col-md-9 {
+            .user-details {
+              .user-name {
+                font-size: 1.2rem !important;
+              }
+              .post-date-box {
+                display: none;
+              }
+            }
+
+            .listing-details {
+              text-align: center;
+              .listing-btn-box {
+                margin-top: 25px;
+                a {
+                  padding: 8px 10px;
+                }
+              }
+            }
+          }
         }
       }
     }
   }
+
+  #pagination {
+    .pages {
+      li {
+        padding: 10px 25px;
+      }
+    }
+  }
 }
-
-/* Mobile Styles */
-@media only screen and (max-width: 400px) {
-    #filter {
-        display: none;
-    }
-
-    #listings {
-        .search-area {
-            input[type] {
-                width: 100%;
-            }
-        }
-    }
-
-    .sortby-area {
-        .sort-options {
-            .view {
-                display: none!important;
-            }
-        }
-    }
-
-    #listings {
-        width: 100%;
-    }
-
-    #pagination {
-        .pages {
-            li {
-                padding: 10px 15px;
-            }
-        }
-    }
-  }
-  
-  /* Tablet Styles */
-  @media only screen and (min-width: 401px) and (max-width: 960px) {
-
-  }

@@ -2,24 +2,6 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 export default class Header extends Component {
-  constructor() {
-    super();
-    this.state = {
-      modal: false
-    };
-  }
-
-  toggleModal = () => {
-    this.setState(
-      {
-        modal: !this.state.modal
-      },
-      () => {
-        console.log(this.state.modal);
-      }
-    );
-  };
-
   render() {
     return (
       <header>
@@ -33,7 +15,7 @@ export default class Header extends Component {
           <Link to="/">Post Ad</Link>
           <Link to="/about/">About Us</Link>
           <Link to="/">Login</Link>
-          <Link to="/" className="register-btn" onClick={this.toggleModal}>
+          <Link to="/register/" className="register-btn">
             Register
           </Link>
         </nav>

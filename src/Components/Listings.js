@@ -35,7 +35,7 @@ export default class Listings extends Component {
                       >
                         {listing.userName}
                       </span>
-                      <span className="post-date">
+                      <span className="post-date-box">
                         Posted on {listing.postDate}
                       </span>
                     </div>
@@ -49,7 +49,7 @@ export default class Listings extends Component {
                         <i className="fas fa-bed" />
                         <span>Bedrooms {listing.rooms}</span>
                       </div>
-                      <div className="listing-btn">
+                      <div className="listing-btn-box">
                         <a href="#home">View More</a>
                       </div>
                     </div>

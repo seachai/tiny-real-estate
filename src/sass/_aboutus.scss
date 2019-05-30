@@ -1,35 +1,89 @@
 #aboutUs {
-    height: 100vh;
-    padding: 50px;
+  height: 100vh;
+  padding: 50px;
 
+  .title {
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 5rem;
+    color: $darkGrey;
+  }
+
+  .container {
+    display: flex;
+    width: 100%;
+    .info {
+      color: #333;
+      margin-bottom: 2rem;
+      line-height: 2.5rem;
+      width: 50%;
+    }
+
+    .aboutPhoto {
+      width: 500px;
+      height: 400px;
+      margin: 50px;
+    }
+  }
+
+  .footer-info {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    color: $darkGrey;
+  }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  #aboutUs {
     .title {
-        font-size: 3.5rem;
-        text-align: center;
-        font-weight: 500;
-        margin-bottom: 5rem;
-        color: $darkGrey;
+      font-size: 3rem;
+      margin-bottom: 3rem;
     }
-
     .container {
-        display: flex;
-        .info {
-            color: #333;
-            margin-bottom: 2rem;
-            line-height: 2.5rem;
-        }
-    
-        .aboutPhoto {
-            width: 500px;
-            height: 400px;
-            margin: 50px;
-        }
+      display: flex;
+      flex-direction: column;
+
+      .info {
+        color: #333;
+        margin-bottom: 2rem;
+        line-height: 2rem;
+        width: 100%;
+      }
+      .aboutPhoto {
+        width: 250px;
+        height: 200px;
+        margin: 0 auto;
+      }
     }
 
-    .footer-info {
-        margin-top: 5rem;
-        text-align: center;
-        font-size: 2rem;
-        font-weight: 500;
-        color: $darkGrey;
+    h5 {
+      margin-bottom: 2rem;
     }
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  #aboutUs {
+    .title {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      .info {
+        font-size: 1.3rem;
+        width: 100%;
+      }
+    }
+
+    h5 {
+      margin-bottom: 2rem;
+    }
+  }
 }
