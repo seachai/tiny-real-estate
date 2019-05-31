@@ -39,7 +39,10 @@
         width: 15%;
       }
       button {
-        background: red;
+        background: transparent;
+        border: 1px solid #333;
+        color: #333;
+        padding: 0.25em .5em;
       }
     }
   }

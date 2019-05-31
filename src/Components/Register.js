@@ -4,24 +4,43 @@ export default class Register extends Component {
   constructor() {
     super();
     this.state = {
-      email: "",
-      password: ""
+      firstname: "",
+      lastname: "",
+      email: ""
     };
   }
+  userInfo = e => {
+    const input = e.target.name;
+    const value =
+      e.target.type === "checkbox" ? e.target.checked : e.target.value;
+    this.setState(
+      {
+        [input]: value
+      },
+      () => {
+        console.log(this.state);
+      }
+    );
+  };
+  handleSubmit = e => {
+    e.preventDefault();
+    console.log("Submit works");
+  };
   render() {
     return (
       <section id="register">
         <div className="container">
           <h1>Register Account</h1>
           <div className="sign-up">
-            <form className="forms">
+            <form className="forms" onSubmit={this.handleSubmit}>
               <label>First Name *</label>
               <br />
               <input
                 type="firstname"
                 name="firstname"
-                placeholder="First Name"
+                placeholder="first name"
                 className="firstName"
+                onChange={this.userInfo}
               />
               <br />
               <label>Last Name *</label>
@@ -29,8 +48,9 @@ export default class Register extends Component {
               <input
                 type="lastname"
                 name="lastname"
-                placeholder="Last Name"
+                placeholder="last name"
                 className="lastName"
+                onChange={this.userInfo}
               />
               <br />
               <label>Email *</label>
@@ -38,8 +58,9 @@ export default class Register extends Component {
               <input
                 type="text"
                 name="email"
-                placeholder="Email"
+                placeholder="myemail@email.com"
                 className="email"
+                onChange={this.userInfo}
                 required
               />
               <br />

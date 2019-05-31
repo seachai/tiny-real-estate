@@ -47,7 +47,7 @@ export default class Listings extends Component {
                       </div>
                       <div className="bedrooms">
                         <i className="fas fa-bed" />
-                        <span>Bedrooms {listing.rooms}</span>
+                        <span>{listing.rooms > 1 ? 'Bedrooms' : 'Bedroom'} {listing.rooms}</span>
                       </div>
                       <div className="listing-btn-box">
                         <a href="#home">View More</a>
@@ -95,7 +95,7 @@ export default class Listings extends Component {
                       </div>
                       <div className="bedrooms">
                         <i className="fas fa-bed" />
-                        <span>Bedrooms {listing.rooms}</span>
+                        <span>{listing.rooms > 1 ? 'Bedrooms' : 'Bedroom'} {listing.rooms}</span>
                       </div>
                       <div className="listing-btn">
                         <a href="#home">View More</a>
