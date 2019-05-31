@@ -5,4 +5,42 @@
     padding: 25px;
     font-size: 1.5rem;
   }
+
+  .sign-up {
+    .forms {
+      width: 100%;
+      margin: 0 auto;
+      label {
+        font-weight: 300;
+        font-size: .8rem;
+      }
+      .firstName {
+        background: transparent;
+        outline: none;
+        border: none;
+        border-bottom: 1px dotted #333;
+        margin: 25px;
+        width: 15%;
+      }
+      .lastName {
+        background: transparent;
+        outline: none;
+        border: none;
+        border-bottom: 1px dotted #333;
+        margin: 25px;
+        width: 15%;
+      }
+      .email {
+        background: transparent;
+        outline: none;
+        border: none;
+        border-bottom: 1px dotted #333;
+        margin: 25px;
+        width: 15%;
+      }
+      button {
+        background: red;
+      }
+    }
+  }
 }
