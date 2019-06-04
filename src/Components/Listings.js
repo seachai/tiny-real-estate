@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Link } from 'react-router-dom';
+import Info from './pages/Info';
 
 export default class Listings extends Component {
   constructor() {
@@ -17,6 +19,7 @@ export default class Listings extends Component {
       // Box view
       if (this.props.globalState.view === "box") {
         return (
+          <Router>
           <div className="col-md-3" key={index}>
             <div className="listing">
               <div
@@ -50,7 +53,7 @@ export default class Listings extends Component {
                         <span>{listing.rooms > 1 ? 'Bedrooms' : 'Bedroom'} {listing.rooms}</span>
                       </div>
                       <div className="listing-btn-box">
-                        <a href="#home">View More</a>
+                        <Link to="/info"><Info listingsData={this.props.listingsData} /></Link>
                       </div>
                     </div>
                   </div>
@@ -66,10 +69,12 @@ export default class Listings extends Component {
               </div>
             </div>
           </div>
+          </Router>
         );
       } else if (this.props.globalState.view === "horizontal") {
         // Horizontal view
         return (
+          <Router>
           <div className="col-md-12 col-lg-6" key={index}>
             <div className="listing">
               <div
@@ -98,7 +103,7 @@ export default class Listings extends Component {
                         <span>{listing.rooms > 1 ? 'Bedrooms' : 'Bedroom'} {listing.rooms}</span>
                       </div>
                       <div className="listing-btn">
-                        <a href="#home">View More</a>
+                      <Link to="/info"><Info listingsData={this.props.listingsData} /></Link>
                       </div>
                     </div>
                   </div>
@@ -114,6 +119,7 @@ export default class Listings extends Component {
               </div>
             </div>
           </div>
+          </Router>
         );
       }
     });

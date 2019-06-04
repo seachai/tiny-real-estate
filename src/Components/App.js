@@ -4,6 +4,7 @@ import Header from "./Header.js";
 import AboutUs from "./AboutUs.js";
 import Register from "./Register.js";
 import RealEstate from "./RealEstate.js";
+import Info from "./pages/Info.js";
 import "../sass/App.scss";
 
 export default class App extends Component {
@@ -13,9 +14,10 @@ export default class App extends Component {
         <div>
           <Header />
           <section id="content-area">
-          <Route exact path="/" component={RealEstate} />
-          <Route path="/about" component={AboutUs} />
-          <Route path="/register" component={Register} />
+            <Route exact path="/" component={RealEstate} />
+            <Route path="/about" component={AboutUs} />
+            <Route path="/register" component={Register} />
+            <Route path="/info" component={Info} />
           </section>
         </div>
       </Router>
