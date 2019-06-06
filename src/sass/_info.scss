@@ -13,18 +13,17 @@
   
     .sub-menu {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
+      margin-bottom: 1.5rem;
   
       a {
-        color: #2a7ddd;
+        color: $darkGrey;
         padding: 20px;
         text-decoration: none;
       }
-  
-      .direction,
+
       .sub-links {
         display: flex;
-        flex-direction: row;
       }
     }
     .content-area {
@@ -51,12 +50,17 @@
                 font-size: 1.8rem;
                 color: #fff;
                 cursor: pointer;
+                transition: .2s;
   
                 &.left-arrow {
                   left: 0;
                 }
                 &.right-arrow {
                   right: 0;
+                }
+
+                &:hover {
+                    background: rgba(0, 0, 0, 0.4);
                 }
               }
   

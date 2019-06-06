@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Link } from 'react-router-dom';
-import Info from './pages/Info';
-
+import { Link } from "react-router-dom";
 export default class Listings extends Component {
   constructor() {
     super();
@@ -19,7 +17,6 @@ export default class Listings extends Component {
       // Box view
       if (this.props.globalState.view === "box") {
         return (
-          <Router>
           <div className="col-md-3" key={index}>
             <div className="listing">
               <div
@@ -50,10 +47,13 @@ export default class Listings extends Component {
                       </div>
                       <div className="bedrooms">
                         <i className="fas fa-bed" />
-                        <span>{listing.rooms > 1 ? 'Bedrooms' : 'Bedroom'} {listing.rooms}</span>
+                        <span>
+                          {listing.rooms > 1 ? "Bedrooms" : "Bedroom"}{" "}
+                          {listing.rooms}
+                        </span>
                       </div>
                       <div className="listing-btn-box">
-                        <Link to="/info"><Info listingsData={this.props.listingsData} /></Link>
+                        <Link to="/info">View More</Link>
                       </div>
                     </div>
                   </div>
@@ -69,12 +69,10 @@ export default class Listings extends Component {
               </div>
             </div>
           </div>
-          </Router>
         );
       } else if (this.props.globalState.view === "horizontal") {
         // Horizontal view
         return (
-          <Router>
           <div className="col-md-12 col-lg-6" key={index}>
             <div className="listing">
               <div
@@ -100,10 +98,13 @@ export default class Listings extends Component {
                       </div>
                       <div className="bedrooms">
                         <i className="fas fa-bed" />
-                        <span>{listing.rooms > 1 ? 'Bedrooms' : 'Bedroom'} {listing.rooms}</span>
+                        <span>
+                          {listing.rooms > 1 ? "Bedrooms" : "Bedroom"}{" "}
+                          {listing.rooms}
+                        </span>
                       </div>
                       <div className="listing-btn">
-                      <Link to="/info"><Info listingsData={this.props.listingsData} /></Link>
+                        <Link to="/info">View More</Link>
                       </div>
                     </div>
                   </div>
@@ -119,7 +120,6 @@ export default class Listings extends Component {
               </div>
             </div>
           </div>
-          </Router>
         );
       }
     });
