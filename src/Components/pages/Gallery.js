@@ -12,13 +12,15 @@ export default class Gallery extends Component {
 
   componentWillMount() {
     const allImgs = [
-      "https://i.ytimg.com/vi/lmygBrAx0RE/maxresdefault.jpg",
-      "https://images.autotrader.com/hn/c/bbb2b557c823469fbf5dfaea4add0437.jpg",
-      "https://www.quattroworld.com/wp-content/gallery/rs-7-p/Audi-RS7-1-1.jpg",
-      "https://www.quattrodaily.com/wp-content/uploads/2018/01/2018-detroid-auto-show-audi-a7-7468-1050x700.jpg",
-      "https://i.ytimg.com/vi/njROGXHRs3E/maxresdefault.jpg",
-      "https://i0.wp.com/www.carooza.com/wp-content/uploads/2018/06/AUDI-RS7-Carooza-4.jpg?fit=1024%2C683&ssl=1",
-      "https://i.pinimg.com/originals/96/7f/69/967f69c3c43c0bde43917a1f6264ac1a.jpg"
+      "https://i.pinimg.com/originals/15/47/56/154756661de9143535e666c588c1bdbf.jpg",
+      "https://i0.wp.com/decorits.com/wp-content/uploads/2019/02/Luxury-Tiny-Home-Plans-Via-plougonver.com-.jpg?fit=1280%2C720&ssl=1",
+      "http://birbudhu.org/wp-content/uploads/2019/01/modern-tiny-house-design-amazing-modern-tiny-house-plans-or-modern-design-small-house-pictures-best-small-modern-adorable-modern-modern-small-home-designs-india.jpg",
+      "https://i.pinimg.com/originals/a2/3f/92/a23f92eed520e096deeba46c5f3133b1.jpg",
+      "https://www.bluezoowriters.com/wp-content/uploads/2017/05/Modern-Tiny-House-Builders.jpg",
+      "https://i.pinimg.com/736x/79/24/47/79244784291bb7b598062cdf37ab994d--tiny-houses-ideas-small-houses.jpg",
+      "http://chibas-bioenergy.org/wp-content/uploads/2017/12/modern-tiny-houses-for-sale-prfabricat-rtrat-rsinc-modern-tiny-house-for-sale-uk-modern-small-homes-for-sale.jpg",
+      "https://www.bluezoowriters.com/wp-content/uploads/2017/06/Modern-Tiny-House-Plans.jpg",
+      "http://rambhamidi.me/wp-content/uploads/2018/07/tiny-houses-modern-posted-house-listings-modern-tiny-houses-for-sale-texas.jpg"
     ];
     this.setState({
       allImgs: allImgs,

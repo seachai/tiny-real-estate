@@ -22,32 +22,28 @@ export default class Info extends Component {
               </div>
               <div className="details-column">
                 <div className="date">Posted: May 25th</div>
-                <h3 className="title">Title from data</h3>
+                <h3 className="title">Title</h3>
                 <h4 className="price">$100,000</h4>
                 <div className="more-details">
                   <div className="info">
                     <label>Address</label>
-                    <h5>JAHASF154WA215</h5>
+                    <h5>999 Address St, 90512</h5>
                   </div>
                   <div className="info">
                     <label>Home Type</label>
-                    <h5>5,000</h5>
+                    <h5>Tiny Home</h5>
                   </div>
                   <div className="info">
                     <label>Bedrooms</label>
-                    <h5>6-Speed Automatic</h5>
-                  </div>
-                  <div className="info">
-                    <label>Price</label>
-                    <h5>Excellent</h5>
+                    <h5>2</h5>
                   </div>
                   <div className="info">
                     <label>Floor Space</label>
-                    <h5>Pearl White</h5>
+                    <h5>250 sqft</h5>
                   </div>
                   <div className="info">
                     <label>Extras</label>
-                    <h5>Sport</h5>
+                    <h5>Loft and Patio</h5>
                   </div>
                 </div>
                 <div className="description">
