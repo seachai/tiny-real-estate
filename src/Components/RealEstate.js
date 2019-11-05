@@ -3,6 +3,7 @@ import Filter from "./Filter.js";
 import Listings from "./Listings.js";
 import listingsData from "./data/listingsData.js";
 import "../sass/App.scss";
+import Hero from "./Hero.js";
 
 class RealEstate extends Component {
   constructor() {
@@ -213,22 +214,21 @@ class RealEstate extends Component {
 
   render() {
     return (
-      <div>
-        <section id="content-area">
-          <Filter
-            change={this.change}
-            globalState={this.state}
-            populateAction={this.populateForms}
-            resetFilters={this.resetFilters}
-          />
-          <Listings
-            listingsData={this.state.filteredData}
-            change={this.change}
-            globalState={this.state}
-            changeView={this.changeView}
-          />
-        </section>
-      </div>
+      <section id="content-area">
+        <Hero />
+        <Filter
+          change={this.change}
+          globalState={this.state}
+          populateAction={this.populateForms}
+          resetFilters={this.resetFilters}
+        />
+        <Listings
+          listingsData={this.state.filteredData}
+          change={this.change}
+          globalState={this.state}
+          changeView={this.changeView}
+        />
+      </section>
     );
   }
 }

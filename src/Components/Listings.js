@@ -6,6 +6,11 @@ export default class Listings extends Component {
     this.state = {};
     this.loopListings = this.loopListings.bind(this);
   }
+
+  formatNumbers(num) {
+    return num.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
+  }
+
   loopListings() {
     const { listingsData } = this.props;
 
@@ -33,7 +38,7 @@ export default class Listings extends Component {
                         className="user-name"
                         style={{ fontSize: "1.2rem" }}
                       >
-                        {listing.userName}
+                        Posted by {listing.userName}
                       </span>
                       <span className="post-date-box">
                         Posted on {listing.postDate}
@@ -112,10 +117,12 @@ export default class Listings extends Component {
               </div>
 
               <div className="bottom-info">
-                <span className="price">${listing.price}</span>
-                <br />
                 <span className="location">
                   {listing.city}, {listing.state}
+                </span>
+                <br />
+                <span className="price">
+                  $<bold>{listing.price}</bold>
                 </span>
               </div>
             </div>

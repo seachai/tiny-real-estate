@@ -1,0 +1,148 @@
+a,
+li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+#footer {
+  // padding: 30px 25px;
+  padding-top: 5rem;
+  width: 100%;
+  background: #030303;
+
+  .title {
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-size: 1.4rem;
+  }
+  .footer--links {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+    a {
+      width: 100%;
+      padding: 8px 0;
+      color: #fff;
+      transition: all 0.1s ease-in-out;
+
+      &:hover {
+        color: $pink;
+      }
+    }
+
+    i {
+      color: #fff;
+      margin-top: 1rem;
+      a {
+        font-family: "Fira Sans", sans-serif;
+      }
+    }
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+
+      a {
+        padding: 0 12px;
+      }
+    }
+  }
+
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin-top: 2rem;
+    background: #fff;
+    color: #333;
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .copyright {
+        height: 100%;
+      }
+
+      h4 {
+        text-align: left;
+        color: #333;
+      }
+      .logo {
+        text-align: center;
+        img {
+          max-height: 80px;
+        }
+      }
+      .social-media {
+        text-align: center;
+        a {
+          font-size: 1.5rem;
+          margin-left: 2rem;
+          color: #333;
+          transition: all 0.1s ease-in-out;
+
+          &:hover {
+            color: $pink;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #footer {
+    padding-top: 2rem;
+
+    .footer-bottom {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 200px;
+      background: #fff;
+      color: #333;
+
+      .container {
+        display: flex;
+        flex-direction: column;
+
+        .copyright {
+          height: 100%;
+          margin: 1rem 0;
+        }
+
+        h4 {
+          text-align: center;
+          color: #333;
+        }
+        .logo {
+          text-align: center;
+          img {
+            max-height: 80px;
+          }
+        }
+        .social-media {
+          text-align: center;
+          margin: 1rem 0;
+          display: flex;
+          justify-content: space-evenly;
+
+          a {
+            font-size: 1.5rem;
+            color: #333;
+            transition: all 0.1s ease-in-out;
+            padding: 0 25px;
+
+            &:hover {
+              color: $pink;
+            }
+          }
+        }
+      }
+    }
+  }
+}

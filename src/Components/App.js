@@ -5,21 +5,21 @@ import AboutUs from "./AboutUs.js";
 import Register from "./Register.js";
 import RealEstate from "./RealEstate.js";
 import Info from "./pages/Info.js";
+import Footer from "./Footer.js";
 import "../sass/App.scss";
 
 export default class App extends Component {
   render() {
     return (
       <Router>
-        <div>
-          <Header />
-          <section id="content-area">
-            <Route exact path="/" component={RealEstate} />
-            <Route path="/about" component={AboutUs} />
-            <Route path="/register" component={Register} />
-            <Route path="/info" component={Info} />
-          </section>
-        </div>
+        <Header />
+        <section id="content-area">
+          <Route exact path="/" component={RealEstate} />
+          <Route path="/about" component={AboutUs} />
+          <Route path="/register" component={Register} />
+          <Route path="/info" component={Info} />
+        </section>
+        <Footer />
       </Router>
     );
   }
