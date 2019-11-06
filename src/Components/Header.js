@@ -1,25 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
+import Register from "./Register";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  return (
-    <header>
-      <div className="logo">
-        <Link exact to="/">
-          <i className="fas fa-home" />
-          <span>Tiny Real Estates</span>
-        </Link>
-      </div>
+  const [register, setRegister] = useState(false);
 
-      <nav>
-        <Link to="/">Post Ad</Link>
-        <Link to="/about/">FAQ</Link>
-        <Link to="/">Log in</Link>
-        <Link to="/register/" className="register-btn">
-          Sign up
-        </Link>
-      </nav>
-    </header>
+  return (
+    <>
+      <header>
+        <div className="logo">
+          <Link to="/">
+            <i className="fas fa-home" />
+            <span>Tiny Real Estates</span>
+          </Link>
+        </div>
+
+        <nav>
+          <Link to="/">Post Ad</Link>
+          <Link to="/about/">FAQ</Link>
+          <Link to="/">Log in</Link>
+          <a
+            href="#register"
+            className="register-btn"
+            onClick={e => setRegister(!register)}
+          >
+            Sign up
+          </a>
+        </nav>
+      </header>
+      {register ? <Register /> : ""}
+    </>
   );
 };
 

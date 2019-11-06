@@ -122,7 +122,7 @@ export default class Listings extends Component {
                 </span>
                 <br />
                 <span className="price">
-                  $<bold>{listing.price}</bold>
+                  $<strong>{listing.price}</strong>
                 </span>
               </div>
             </div>

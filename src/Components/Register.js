@@ -1,74 +1,73 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
+import SignUpPhoto from "../Images/Signup/signup.jpg";
+import HousePhoto from "../Images/Signup/house_login_web.png";
 
-export default class Register extends Component {
-  constructor() {
-    super();
-    this.state = {
-      firstname: "",
-      lastname: "",
-      email: ""
-    };
-  }
-  userInfo = e => {
-    const input = e.target.name;
-    const value =
-      e.target.type === "checkbox" ? e.target.checked : e.target.value;
-    this.setState(
-      {
-        [input]: value
-      },
-      () => {
-        console.log(this.state);
-      }
-    );
-  };
-  handleSubmit = e => {
+const Register = () => {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = e => {
     e.preventDefault();
-    console.log("Submit works");
+    console.log(firstName, lastName, email);
   };
-  render() {
-    return (
-      <section id="register">
-        <div className="container">
-          <h1>Register Account</h1>
-          <div className="sign-up">
-            <form className="forms" onSubmit={this.handleSubmit}>
-              <label>First Name *</label>
-              <br />
-              <input
-                type="firstname"
-                name="firstname"
-                placeholder="first name"
-                className="firstName"
-                onChange={this.userInfo}
-              />
-              <br />
-              <label>Last Name *</label>
-              <br />
-              <input
-                type="lastname"
-                name="lastname"
-                placeholder="last name"
-                className="lastName"
-                onChange={this.userInfo}
-              />
-              <br />
-              <label>Email *</label>
-              <br />
-              <input
-                type="text"
-                name="email"
-                placeholder="myemail@email.com"
-                className="email"
-                onChange={this.userInfo}
-                required
-              />
-              <br />
-              <button type="submit">Register</button>
-            </form>
-          </div>
+
+  return (
+    <section id="register">
+      <div className="container">
+        <div className="sign-up">
+          <form className="forms" onSubmit={handleSubmit}>
+            <div className="signup-welcome">
+              <h1>Welcome to Tiny Real Estates</h1>
+              <p>
+                Sign up to purchase, sell or view your new future tiny home!
+              </p>
+            </div>
+            <input
+              type="firstname"
+              name="firstname"
+              placeholder="* First Name"
+              className="firstName"
+              onChange={e => setFirstName(e.target.value)}
+            />
+            <input
+              type="lastname"
+              name="lastname"
+              placeholder="* Last Name"
+              className="lastName"
+              onChange={e => setLastName(e.target.value)}
+            />
+            <input
+              type="text"
+              name="email"
+              placeholder="* Email"
+              className="email"
+              required
+              onChange={e => setEmail(e.target.value)}
+            />
+            <button type="submit">Register</button>
+            <div className="member-check">
+              <span>Already a member? </span>
+              <a href="#login">Log in</a>
+            </div>
+            <img
+              className="bottom-house-photo"
+              src={HousePhoto}
+              alt="Bottom house details"
+            />
+          </form>
         </div>
-      </section>
-    );
-  }
-}
+        <div className="signup-detail">
+          <i className="fas fa-times"></i>
+          <img
+            className="signup-photo"
+            src={SignUpPhoto}
+            alt="Cozy room with dog"
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Register;
