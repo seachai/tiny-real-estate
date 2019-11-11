@@ -41,17 +41,17 @@ export default class Footer extends Component {
               <div className="footer--links">
                 <div className="contact-info">
                   <i className="fas fa-envelope">
-                    <a href="mailto:imchai@gmail.com" target="_top">
-                      imchai@gmail.com
+                    <a href="mailto:tinyrealestates@email.com" target="_top">
+                      tinyrealestates@email.com
                     </a>
                   </i>
                   <i className="fas fa-phone-alt">
                     <a
-                      href="tel:1-111-111-1111"
+                      href="tel:1-800-123-4567"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      1 (800) 111-1111
+                      1 (800) 123-4567
                     </a>
                   </i>
                 </div>

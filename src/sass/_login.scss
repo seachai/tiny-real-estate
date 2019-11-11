@@ -1,4 +1,4 @@
-#register {
+#login {
   display: block;
   position: fixed;
   top: 1;
@@ -8,9 +8,13 @@
 
   .container {
     display: flex;
+    flex-direction: row-reverse;
     width: 100%;
     height: 100%;
     border-radius: 5px;
+    // -webkit-box-shadow: 0 9px 15px -4px rgba(224, 224, 224, 1);
+    // -moz-box-shadow: 0 9px 15px -4px rgba(224, 224, 224, 1);
+    // box-shadow: 0 9px 15px -4px rgba(224, 224, 224, 1);
     box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
     z-index: 1000;
     background: #fff;
@@ -36,9 +40,8 @@
             margin-bottom: 1.5rem;
           }
         }
-        .firstName,
-        .lastName,
-        .email {
+        .email,
+        .password {
           background: transparent;
           outline: none;
           border: 1px solid #333;
@@ -49,10 +52,6 @@
         button {
           cursor: pointer;
           font-size: 1.2rem;
-          // background: transparent;
-          // color: #333;
-          // padding: 0.8rem 2.4rem;
-          // margin-top: 1rem;
           border: 1px solid transparent;
           background: $pink;
           padding: 0.8rem 2.4rem;
@@ -86,7 +85,6 @@
 
     .signup-detail {
       display: flex;
-      flex-direction: row-reverse;
       width: 50%;
       position: relative;
       .fa-times {
@@ -104,8 +102,8 @@
         width: 100%;
         height: 600px;
         object-fit: cover;
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
       }
     }
   }
