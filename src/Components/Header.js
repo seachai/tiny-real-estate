@@ -18,9 +18,11 @@ const Header = () => {
         <nav>
           <Link to="/">Post Ad</Link>
           <Link to="/about/">FAQ</Link>
-          <Link to="/">Log in</Link>
+          <Link href="#login" onClick={e => setRegister(register)}>
+            Log in
+          </Link>
           <a
-            href="#register"
+            href="#signup"
             className="register-btn"
             onClick={e => setRegister(!register)}
           >

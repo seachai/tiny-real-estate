@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+
 export default class Listings extends Component {
   constructor() {
     super();
@@ -7,6 +8,7 @@ export default class Listings extends Component {
     this.loopListings = this.loopListings.bind(this);
   }
 
+  //Function to add commas to the prices of the listing
   formatNumbers(num) {
     return num.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
   }
@@ -58,7 +60,7 @@ export default class Listings extends Component {
                         </span>
                       </div>
                       <div className="listing-btn-box">
-                        <Link to="/info">View More</Link>
+                        <Link to={listing.path}>View More</Link>
                       </div>
                     </div>
                   </div>

@@ -12,7 +12,8 @@ let listingsData = [
     loft: true,
     patio: true,
     image:
-      "https://i.pinimg.com/originals/15/47/56/154756661de9143535e666c588c1bdbf.jpg"
+      "https://i.pinimg.com/originals/15/47/56/154756661de9143535e666c588c1bdbf.jpg",
+    path: `/listings/23-Dexi-Hills_Richwood_NY`
   },
   {
     userName: "Ervin Howell",
@@ -26,7 +27,8 @@ let listingsData = [
     floorSpace: 150,
     loft: true,
     image:
-      "https://i0.wp.com/decorits.com/wp-content/uploads/2019/02/Luxury-Tiny-Home-Plans-Via-plougonver.com-.jpg?fit=1280%2C720&ssl=1"
+      "https://i0.wp.com/decorits.com/wp-content/uploads/2019/02/Luxury-Tiny-Home-Plans-Via-plougonver.com-.jpg?fit=1280%2C720&ssl=1",
+    path: `/listings/857-Heritage-Street_Burke_VA`
   },
   {
     userName: "Clementine Bauch",

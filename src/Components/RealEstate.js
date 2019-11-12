@@ -6,6 +6,7 @@ import "../sass/App.scss";
 import Hero from "./Hero.js";
 
 class RealEstate extends Component {
+  // useState
   constructor() {
     super();
     this.state = {
@@ -33,6 +34,7 @@ class RealEstate extends Component {
     this.changeView = this.changeView.bind(this);
   }
 
+  // useEffect
   componentWillMount() {
     let listingsData = this.state.listingsData.sort((a, b) => {
       return a.price - b.price;
