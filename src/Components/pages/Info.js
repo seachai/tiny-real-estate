@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import Gallery from "./Gallery";
-import ListingsData from "../data/listingsData";
+import listingsData from "../data/listingsData";
 
 //Needs redux
 
 const Info = () => {
-  const { listing } = ListingsData;
+  const { listing } = listingsData;
 
   return (
     <div className="details-page">
