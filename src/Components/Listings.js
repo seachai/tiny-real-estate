@@ -111,7 +111,7 @@ export default class Listings extends Component {
                         </span>
                       </div>
                       <div className="listing-btn">
-                        <Link to="/info">View More</Link>
+                        <Link to={listing.path}>View More</Link>
                       </div>
                     </div>
                   </div>

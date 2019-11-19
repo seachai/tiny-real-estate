@@ -1,12 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import Gallery from "./Gallery";
 import listingsData from "../data/listingsData";
 
 //Needs redux
 
 const Info = () => {
-  const { listing } = listingsData;
-
   return (
     <div className="details-page">
       <div className="container">
@@ -27,12 +25,13 @@ const Info = () => {
             <div className="details-column">
               <div className="date">Posted: May 25th</div>
               <h3 className="title">Title</h3>
-              <h4 className="price">{listing.price}</h4>
+              <h4 className="price">{listingsData.price}</h4>
               <div className="more-details">
                 <div className="info">
                   <label>Address</label>
                   <h5>
-                    {listing.address} {listing.city}, {listing.state}
+                    {listingsData.address} {listingsData.city},{" "}
+                    {listingsData.state}
                   </h5>
                 </div>
                 <div className="info">
@@ -41,11 +40,11 @@ const Info = () => {
                 </div>
                 <div className="info">
                   <label>Bedrooms</label>
-                  <h5>{listing.rooms}</h5>
+                  <h5>{listingsData.rooms}</h5>
                 </div>
                 <div className="info">
                   <label>Floor Space</label>
-                  <h5>{listing.floorSpace} sqft</h5>
+                  <h5>{listingsData.floorSpace} sqft</h5>
                 </div>
                 <div className="info">
                   <label>Extras</label>

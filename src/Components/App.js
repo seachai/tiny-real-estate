@@ -20,7 +20,7 @@ const App = () => {
         <Switch>
           <Route exact path="/" component={RealEstate} />
           <Route path="/about" component={AboutUs} />
-          <Route exact path={ListingData.path} component={Info} />
+          <Route path={ListingData.path} component={Info} />
           {/* {ListingData.map(route => (
             <Route path={route.path} component={Info} />
           ))} */}
