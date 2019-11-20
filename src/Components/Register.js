@@ -3,19 +3,22 @@ import SignUpPhoto from "../Images/Signup/signup.jpg";
 import HousePhoto from "../Images/Signup/house_login_web.png";
 import useForm from "./useForm";
 
-const Register = () => {
+const Register = props => {
   const [values, handleChange] = useForm({
     firstname: "",
     lastname: "",
     email: "",
     password: ""
   });
+  const [isRegistered, setIsRegistered] = useState([...props.status].join(""));
   const [signUp, setSignUp] = useState(true);
 
   const handleSubmit = e => {
     e.preventDefault();
     console.log(values);
   };
+
+  console.log(isRegistered);
 
   const LoginForm = () => {
     return (
@@ -138,7 +141,8 @@ const Register = () => {
     );
   };
 
-  return <>{signUp ? RegisterForm() : LoginForm()}</>;
+  // return <>{signUp ? RegisterForm() : LoginForm()}</>;
+  return <>{isRegistered === "signup" ? RegisterForm() : LoginForm()}</>;
 };
 
 export default Register;
