@@ -15,15 +15,16 @@
     width: 100%;
     .info {
       color: #333;
-      margin-bottom: 2rem;
       line-height: 2.5rem;
       width: 50%;
     }
 
     .aboutPhoto {
-      width: 500px;
-      height: 400px;
-      margin: 50px;
+      width: 50%;
+      height: 450px;
+      margin: 0 25px;
+      display: flex;
+      align-self: center;
     }
   }
 

@@ -5,49 +5,48 @@ li {
 }
 
 #footer {
-  // padding: 30px 25px;
   padding-top: 5rem;
   width: 100%;
   background: #030303;
 
-  .title {
-    text-transform: uppercase;
-    margin-bottom: 0.5rem;
-    color: #fff;
-    font-size: 1.4rem;
-  }
-  .footer--links {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
+  // .title {
+  //   text-transform: uppercase;
+  //   margin-bottom: 0.5rem;
+  //   color: #fff;
+  //   font-size: 1.4rem;
+  // }
+  // .footer--links {
+  //   display: flex;
+  //   flex-direction: column;
+  //   margin-bottom: 1rem;
 
-    a {
-      width: 100%;
-      padding: 8px 0;
-      color: #fff;
-      transition: all 0.1s ease-in-out;
+  //   a {
+  //     width: 100%;
+  //     padding: 8px 0;
+  //     color: #fff;
+  //     transition: all 0.1s ease-in-out;
 
-      &:hover {
-        color: $pink;
-      }
-    }
+  //     &:hover {
+  //       color: $pink;
+  //     }
+  //   }
 
-    i {
-      color: #fff;
-      margin-top: 1rem;
-      a {
-        font-family: "Fira Sans", sans-serif;
-      }
-    }
-    .contact-info {
-      display: flex;
-      flex-direction: column;
+  //   i {
+  //     color: #fff;
+  //     margin-top: 1rem;
+  //     a {
+  //       font-family: "Fira Sans", sans-serif;
+  //     }
+  //   }
+  //   .contact-info {
+  //     display: flex;
+  //     flex-direction: column;
 
-      a {
-        padding: 0 12px;
-      }
-    }
-  }
+  //     a {
+  //       padding: 0 12px;
+  //     }
+  //   }
+  // }
 
   .footer-bottom {
     display: flex;
@@ -55,8 +54,8 @@ li {
     width: 100%;
     height: 100px;
     margin-top: 2rem;
-    background: #fff;
-    color: #333;
+    background: #030303;
+    color: #fff;
 
     .container {
       display: flex;
@@ -69,12 +68,28 @@ li {
 
       h4 {
         text-align: left;
-        color: #333;
+        color: #fff;
       }
       .logo {
         text-align: center;
-        img {
-          max-height: 80px;
+        .fas {
+          font-size: 1.5rem;
+          color: $white;
+          text-decoration: none;
+          transition: all 0.2s ease-in-out;
+          &:hover {
+            color: $pink;
+          }
+        }
+
+        span {
+          padding: 0 1rem;
+          color: $white;
+          font-size: 1.5rem;
+          transition: all 0.2s ease-in-out;
+          &:hover {
+            color: $pink;
+          }
         }
       }
       .social-media {
@@ -82,7 +97,7 @@ li {
         a {
           font-size: 1.5rem;
           margin-left: 2rem;
-          color: #333;
+          color: #fff;
           transition: all 0.1s ease-in-out;
 
           &:hover {

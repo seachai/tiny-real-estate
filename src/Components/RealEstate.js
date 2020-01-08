@@ -1,9 +1,10 @@
-import React, { Component } from "react";
+import React, { Component, lazy, Suspense } from "react";
 import Filter from "./Filter.js";
 import Listings from "./Listings.js";
 import listingsData from "./data/listingsData.js";
 import "../sass/App.scss";
-import Hero from "./Hero.js";
+
+const Hero = lazy(() => import("./Hero.js"));
 
 class RealEstate extends Component {
   // useState
@@ -217,7 +218,9 @@ class RealEstate extends Component {
   render() {
     return (
       <section id="content-area">
-        <Hero />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Hero />
+        </Suspense>
         <Filter
           change={this.change}
           globalState={this.state}

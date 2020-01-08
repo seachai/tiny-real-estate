@@ -3,7 +3,7 @@ import React from "react";
 const AboutUs = () => {
   return (
     <section id="aboutUs">
-      <h1 className="title">About Us</h1>
+      <h1 className="title">Find your dream home</h1>
       <div className="container">
         <p className="info">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -26,7 +26,7 @@ const AboutUs = () => {
         <img
           className="aboutPhoto"
           src="https://www.ratifiedtitle.com/wp-content/uploads/2019/04/real-estate-agent-holding-cardboard-box-1024x683.jpg"
-          alt="aboutus-agent"
+          alt="A man hold a tiny house model"
         />
       </div>
       <h5 className="footer-info">

@@ -8,7 +8,6 @@ const Hero = () => {
           <h1>Say Hello World!</h1>
         </div>
         <div className="info">Find your dream Tiny House!</div>
-        {/* <input className="search-box" type="text" placeholder="Search..." /> */}
       </div>
     </section>
   );
