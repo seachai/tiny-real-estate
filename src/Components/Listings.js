@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 export default class Listings extends Component {
   constructor() {
     super();
-    this.state = {};
     this.loopListings = this.loopListings.bind(this);
   }
 
@@ -31,6 +30,7 @@ export default class Listings extends Component {
                 style={{
                   background: `url('${listing.image}') no-repeat center center`
                 }}
+                loading="lazy"
               >
                 <span className="address">{listing.address}</span>
                 <div className="details">
@@ -60,7 +60,7 @@ export default class Listings extends Component {
                         </span>
                       </div>
                       <div className="listing-btn-box">
-                        <Link to={listing.path}>View More</Link>
+                        <Link to="/listing">View More</Link>
                       </div>
                     </div>
                   </div>
@@ -182,10 +182,6 @@ export default class Listings extends Component {
             <ul className="pages">
               <li>Prev</li>
               <li className="active">1</li>
-              <li>2</li>
-              <li>3</li>
-              <li>4</li>
-              <li>5</li>
               <li>Next</li>
             </ul>
           </div>

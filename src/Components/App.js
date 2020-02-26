@@ -9,9 +9,10 @@ import AboutUs from "./AboutUs.js";
 import RealEstate from "./RealEstate.js";
 import Info from "./pages/Info.js";
 import Footer from "./Footer.js";
-import "../sass/App.scss";
 import RegisterForm from "./Register";
 import LoginForm from "./Login";
+
+import "../sass/App.scss";
 
 const App = () => {
   return (
@@ -24,7 +25,8 @@ const App = () => {
           <Route path="/about" component={AboutUs} />
           <Route path="/register" component={RegisterForm} />
           <Route path="/login" component={LoginForm} />
-          <Route path={ListingData.path} component={Info} />
+          {/* <Route path={ListingData.path} component={Info} /> */}
+          <Route path="listing/:id" component={Info} />
         </Switch>
       </section>
       <Footer />

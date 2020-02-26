@@ -1,8 +1,5 @@
-import React, { lazy, Suspense } from "react";
+import React, { Suspense } from "react";
 import useForm from "./useForm";
-
-const SignUpPhoto = lazy(() => import("./lib/DogPhoto"));
-const HousePhoto = lazy(() => import("./lib/HousePhoto"));
 
 const LoginForm = () => {
   const [values, handleChange] = useForm({
@@ -50,13 +47,23 @@ const LoginForm = () => {
               </a>
             </div>
             <Suspense fallback={<div>Loading...</div>}>
-              <HousePhoto />
+              <img
+                src="https://i.ibb.co/Qjs6r16/house-login-web.png"
+                className="bottom-house-photo"
+                alt="House"
+                loading="lazy"
+              />
             </Suspense>
           </form>
         </div>
         <div className="signup-detail">
           <Suspense fallback={<div>Loading...</div>}>
-            <SignUpPhoto />
+            <img
+              src="https://i.ibb.co/DKCRcK4/signup.jpg"
+              className="signup-photo"
+              alt="Cute dog"
+              loading="lazy"
+            />
           </Suspense>
         </div>
       </div>

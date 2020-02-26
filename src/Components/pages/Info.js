@@ -2,8 +2,6 @@ import React from "react";
 import Gallery from "./Gallery";
 import listingsData from "../data/listingsData";
 
-//Needs redux
-
 const Info = () => {
   return (
     <div className="details-page">

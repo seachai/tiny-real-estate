@@ -10,7 +10,6 @@ const NavigationBar = () => {
         <div className="logo">
           <Link to="/">
             <i className="fas fa-home" />
-            <span>Tiny Real Estates</span>
           </Link>
         </div>
 

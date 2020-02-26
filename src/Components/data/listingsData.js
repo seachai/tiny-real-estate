@@ -11,8 +11,7 @@ let listingsData = [
     floorSpace: 250,
     loft: true,
     patio: true,
-    image:
-      "https://i.pinimg.com/originals/15/47/56/154756661de9143535e666c588c1bdbf.jpg",
+    image: "https://i.ibb.co/hK9V9mK/6.jpg",
     path: `/listings/23-Dexi-Hills_Richwood_NY`
   },
   {
@@ -26,8 +25,7 @@ let listingsData = [
     price: 35000,
     floorSpace: 150,
     loft: true,
-    image:
-      "https://i0.wp.com/decorits.com/wp-content/uploads/2019/02/Luxury-Tiny-Home-Plans-Via-plougonver.com-.jpg?fit=1280%2C720&ssl=1",
+    image: "https://i.ibb.co/FnS89yB/5.jpg",
     path: `/listings/857-Heritage-Street_Burke_VA`
   },
   {
@@ -40,8 +38,7 @@ let listingsData = [
     rooms: "1",
     price: 22000,
     floorSpace: 125,
-    image:
-      "http://birbudhu.org/wp-content/uploads/2019/01/modern-tiny-house-design-amazing-modern-tiny-house-plans-or-modern-design-small-house-pictures-best-small-modern-adorable-modern-modern-small-home-designs-india.jpg"
+    image: "https://i.ibb.co/vLBy4RP/4.jpg"
   },
   {
     userName: "Patricia Lebsack",
@@ -55,8 +52,7 @@ let listingsData = [
     floorSpace: 355,
     loft: true,
     patio: true,
-    image:
-      "https://i.pinimg.com/originals/a2/3f/92/a23f92eed520e096deeba46c5f3133b1.jpg"
+    image: "https://i.ibb.co/3msHZDH/3.jpg"
   },
   {
     userName: "Chelsey Dietrich",
@@ -70,8 +66,7 @@ let listingsData = [
     floorSpace: 450,
     bar: true,
     patio: true,
-    image:
-      "https://www.bluezoowriters.com/wp-content/uploads/2017/05/Modern-Tiny-House-Builders.jpg"
+    image: "https://i.ibb.co/23RKBy7/2.png"
   },
   {
     userName: "Kurtis Weissnat",
@@ -84,8 +79,7 @@ let listingsData = [
     price: 40000,
     floorSpace: 275,
     bar: true,
-    image:
-      "https://i.pinimg.com/736x/79/24/47/79244784291bb7b598062cdf37ab994d--tiny-houses-ideas-small-houses.jpg"
+    image: "https://i.ibb.co/mt6QD4h/1.png"
   },
   {
     userName: "Nicholas Runolfsdottir",
@@ -98,8 +92,7 @@ let listingsData = [
     price: 35000,
     floorSpace: 265,
     extras: ["2 stories"],
-    image:
-      "http://chibas-bioenergy.org/wp-content/uploads/2017/12/modern-tiny-houses-for-sale-prfabricat-rtrat-rsinc-modern-tiny-house-for-sale-uk-modern-small-homes-for-sale.jpg"
+    image: "https://i.ibb.co/FgWHVKQ/7.jpg"
   },
   {
     userName: "Glenna Reichert",
@@ -113,8 +106,7 @@ let listingsData = [
     floorSpace: 350,
     loft: true,
     patio: true,
-    image:
-      "https://www.bluezoowriters.com/wp-content/uploads/2017/06/Modern-Tiny-House-Plans.jpg"
+    image: "https://i.ibb.co/gRWVLxQ/8.jpg"
   },
   {
     userName: "Christina Sanchez",
@@ -127,8 +119,7 @@ let listingsData = [
     price: 60000,
     floorSpace: 325,
     patio: true,
-    image:
-      "http://rambhamidi.me/wp-content/uploads/2018/07/tiny-houses-modern-posted-house-listings-modern-tiny-houses-for-sale-texas.jpg"
+    image: "https://i.ibb.co/JKH0Sj7/9.jpg"
   }
 ];
 
